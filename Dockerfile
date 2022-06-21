@@ -18,6 +18,6 @@ RUN /opt/miniconda3/bin/conda install -yq conda-build
 RUN echo "export PATH=/opt/miniconda3/bin:$PATH" > /etc/profile
 ENV PATH /opt/miniconda3/bin:$PATH
 
-RUN wget https://data.qiime2.org/distro/core/qiime2-2020.6-py36-linux-conda.yml \
-	&& conda env create -n qiime2 --file qiime2-2020.6-py36-linux-conda.yml \
-	&& rm qiime2-2020.6-py36-linux-conda.yml
+RUN wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml \
+	&& conda env create -n qiime2 --file qiime2-2022.2-py38-linux-conda.yml \
+	&& rm qiime2-2022.2-py38-linux-conda.yml
